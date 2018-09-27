@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <!-- Navigation -->
+    {% include '/partials/menu.html.twig' %}
+
+    <section class="features-icons bg-light">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-12" style="padding-bottom: 5%;">
+                    <div>
+                        <h2>{{ titulo }}</h2>
+                        <p><strong>{{  descripcion }}</strong></p>
+                    </div>
+                </div>
+            </div>
+            {% if page != 3 %}
+                <div class="row">
+                    <div class="col-lg-5 text-center">
+                        <div>
+                            <img src="{{ imagen }}" alt="..." class="img-thumbnail">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div>
+                            <p>{{ body | raw }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% else %}
+                <div class="row" style="padding-left: 20%;">
+                    <div class="col-lg-9">
+                        <div>
+                            <p>{{ body | raw }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </section>
+
+    {% include '/partials/footer.html.twig' %}
+
+{% endblock %}
+

@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <!-- Navigation -->
+    {% include '/partials/menu.html.twig' %}
+
+    <section class="features-icons bg-light text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12" style="padding-bottom: 5%;">
+                    <div>
+                        <h2>Ventajas</h2>
+                        <p ><strong>No arriesgue en inmobilizado… evite las inversiones iniciales</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5">
+                    <div>
+                        <img src="http://sojetel.net/wp-content/uploads/ventajas-e1427708403996.jpg" alt="..." class="img-thumbnail">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div>
+                        <p>Sojetel es una empresa eficiente y flexible, nos adaptamos a sus necesidades y damos una respuesta rápida y eficiente.</p>
+
+                        <p>Contamos con personal cualificado y especializado, capaz de darle el mejor servicio.
+                            Creemos que unos recursos humanos satisfechos y cómodos con su trabajo, tienen un mejor rendimiento y un trato más amable
+                            con los clientes, y así tratamos de cumplir esta premisa.</p>
+
+                        <p>Sumado a estas características, pueden encontrar las siguientes ventajas adicionales:</p>
+
+                        <ul>
+                            <li>Ahorro en costes al externalizar la inversión inicial.</li>
+                            <li>Beneficio y aprovechamiento de la curva de aprendizaje de una empresa especializada.</li>
+                            <li>Rapidez y flexibilidad al contar con los recursos de una empresa externa con años de experiencia.</li>
+                            <li>Disminución del riesgo económico al no usar recursos propios.</li>
+                            <li>Mayor control del gasto, ya que al externalizar se trabaja sobre un presupuesto claro inicial.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include '/partials/footer.html.twig' %}
+
+{% endblock %}
+

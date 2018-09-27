@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <!-- Navigation -->
+    {% include '/partials/menu.html.twig' %}
+
+    <section class="features-icons bg-light text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12" style="padding-bottom: 5%;">
+                    <div>
+                        <h2>Solicite presupuesto sin compromiso</h2>
+                        <p><strong>¿Cuánto cuesta su tranquilidad?</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5">
+                    <div>
+                        <img src="http://sojetel.net/wp-content/uploads/presupuestos-e1427708608478.jpg" alt="..." class="img-thumbnail">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div>
+                        <p>El coste del alquiler del puesto varía dependiendo de la duración y del número de puestos a alquilar.</p>
+                        <p>Para obtener un presupuesto del resto de nuestros servicios o mayor detalle de los conceptos por favor póngase en contacto con nosotros.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include '/partials/footer.html.twig' %}
+
+{% endblock %}
+
