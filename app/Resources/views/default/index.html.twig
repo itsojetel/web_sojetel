@@ -3,20 +3,10 @@
 {% block body %}
 
 <!-- Navigation -->
-<nav class="navbar navbar-light bg-light static-top">
-    {% include '/partials/menu.html.twig' %}
-</nav>
+{% include '/partials/menu.html.twig' %}
 
-<!-- Masthead -->
-<div class="container">
-    <div class="row">
-        <div class="col-md-12 mx-auto">
-            {% include '/carousel/carousel_slider.html.twig' %}
-        </div>
-        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-        </div>
-    </div>
-</div>
+<!-- Carousel -->
+{% include '/carousel/carousel_slider.html.twig' %}
 
 <!-- Icons Grid -->
 <section class="features-icons bg-light text-center">

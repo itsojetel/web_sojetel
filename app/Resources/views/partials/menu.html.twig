@@ -1,44 +1,45 @@
 
-<div class="container">
+<nav class="navbar navbar-light bg-light static-top">
+    <div class="container">
 
-    <div class="col-md-4 text-center">
-        <img class="d-block rounded" src="{{ asset('bundles/framework/images/sojetel-web-logo.png') }}"/>
+        <div class="col-md-4 text-center">
+            <img class="d-block rounded" src="{{ asset('bundles/framework/images/sojetel-web-logo.png') }}"/>
+        </div>
+
+        <div class="col-md-8 float-rigth">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('homepage') }}">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('conozcanos') }}">Conózcanos</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Servicios</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="{{ path('servicios', {'page': 1}) }}">Creacion de Plataformas</a>
+                        <a class="dropdown-item" href="{{ path('servicios', {'page': 2}) }}">Alquiler de puestos</a>
+                        <a class="dropdown-item" href="{{ path('servicios', {'page': 3}) }}">Alquiler de despachos</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="{{ path('servicios', {'page': 4}) }}">Servicios complementarios</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('plataformas') }}">Plataformas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('ventajas') }}">Ventajas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('presupuesto') }}">Presupuesto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('contacto') }}">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://nopaper.sojetel.com/Clientes.php">Área Clientes</a>
+                </li>
+            </ul>
+        </div>
     </div>
-
-    <div class="col-md-8 float-rigth">
-        <ul class="nav nav-pills">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Conózcanos</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Servicios</a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Creacion de Plataformas</a>
-                    <a class="dropdown-item" href="#">Alquiler de puestos</a>
-                    <a class="dropdown-item" href="#">Alquiler de despachos</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Servicios complementarios</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Plataformas</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Ventajas</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Presupuesto</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Área Clientes</a>
-            </li>
-        </ul>
-    </div>
-
-</div>
+</nav>
