@@ -62,9 +62,10 @@ doctrine:
 # Swiftmailer Configuration
 swiftmailer:
     transport: smtp
-    encryption: ssl
+    encryption: tls
     auth_mode:  login
     host:      "smtp.1and1.es"
+    port:      "587"
     username:  "prueba@sojetel.com"
     password:  "_1q2w3e4r5T"
     spool:     { type: memory }

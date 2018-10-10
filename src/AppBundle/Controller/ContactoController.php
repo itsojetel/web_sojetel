@@ -37,14 +37,7 @@ class ContactoController extends Controller
         $body .= "Nombre: {$nombre} .\n\n";
         $body .= "Mensaje: {$mensaje} ";
 
-        $message = \Swift_Message::newInstance()
-            ->setSubject($asunto)
-            ->setFrom($email)
-            ->setTo('soporte@sojetel.com')
-            ->setBody($body);
-
-        ;
-        $this->get('mailer')->send($message);
+        mail('soporte@sojetel.com', $asunto, $body, 'From: '.$email);
 
         // replace this example code with whatever you need
         return $this->render('pages/contacto.html.twig', ['enviado' => 1]);

@@ -22,7 +22,7 @@ class ServiciosController extends Controller
         if($page == 1){
             $titulo = "Creación de Plataformas";
             $descripcion = "¿No posee un contact center propio? Nosotros se lo creamos";
-            $imagen = "http://sojetel.net/wp-content/uploads/creaciondeplataformas-e1427708135321.jpg";
+            $imagen = "creaciondeplataformas-e1427708135321.jpg";
             $body = "<p>Si usted necesita un Conctact Center propio para su empresa, ya sea bien para recepción, 
                     emisión de llamadas o alguna otra función que cree conveniente tener dentro de sus servicios. 
                     Sojetel le facilita todo lo necesario.</p>
@@ -37,7 +37,7 @@ class ServiciosController extends Controller
         else if ($page == 2){
             $titulo = "Alquiler de Posiciones";
             $descripcion = "¿Quiere crecer sin invertir en estructura? Alquile las nuestras";
-            $imagen = "http://sojetel.net/wp-content/uploads/alquilerdeposiciones-e1427708199162.jpg";
+            $imagen = "alquilerdeposiciones-e1427708199162.jpg";
             $body = "<p>Por otro lado, se puede beneficiar de nuestras infraestructuras de contact center ya instaladas, 
                     sin realizar ninguna inversión en material. En nuestras sedes usted puede encontrar todo lo necesario para que su personal pueda llevar 
                     a cabo las actividades de call center que usted estime.</p>
@@ -100,7 +100,7 @@ class ServiciosController extends Controller
         else if ($page == 4){
             $titulo = "Servicios complementarios";
             $descripcion = "Siempre ofrecemos más";
-            $imagen = "http://sojetel.net/wp-content/uploads/extrascallcenter-e1427708330313.jpg";
+            $imagen = "extrascallcenter-e1427708330313.jpg";
             $body = "<p>Algunos servicios complementarios que podemos ofrecer junto con el servicio de alquiler de posiciones son:</p>
 
                     <ul>

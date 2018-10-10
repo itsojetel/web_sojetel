@@ -75,7 +75,7 @@
                             <label for="mensaje">Su mensaje</label>
                             <textarea class="form-control" id="mensaje" name="mensaje" rows="3"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        <button type="submit" class="btn btn-primary" disabled >Enviar</button>
                     </form>
 
                 </div>
@@ -84,7 +84,6 @@
         </div>
 
         {% if enviado == '1'%}
-            entra
             <div class="modal" tabindex="-1" role="dialog">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
